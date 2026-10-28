@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.img_in_header{
+    display: flex;
+    flex-direction: column;
+    
+}
+.img_in_header > img{
+    width: 10%;
+    margin: 5px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    border: solid black;
+    border-width: 2px;
+    /* border-radius: 5%; */
+    width: 100%;
+    /*background-color: aqua;*/
+}
+header > nav{
+    width: 80%;
+}
+.header_nav{
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+    align-items: center;
+    justify-content: center;
+    border: solid black;
+    border-width: 2px;
+    height: 100%;
+}
+
+main{
+    height: 80%;
+}
+
+.test_form{
+    border: solid black;
+    border-radius: 15%;
+    border-width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    /* width: 20%; */
+    /* height: 80%; */
+    height: 80%;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.from_form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* width: 30%; */
+}
+
+footer{
+    border: solid black;
+    border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    /* background-color: aqua; */
+}
+footer>a{
+    width: 20%;
+    height: 100%;
+}
+footer>a>img{
+    width: 100%;
+    height: 90%;
+}
+
+.errors_div {
+/* Фон и общие отступы */
+    background-color: #fdf2f2;
+    border: 1px solid #f8b4b4;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 15px 0;
+    max-width: 600px; /* Ограничиваем ширину для лучшей читаемости */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    bottom: 20px;  
+    right: 20px;    
+    z-index: 9999;
+}
+
+.errors_div ul {
+/* Сброс стандартных отступов списка */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.errors_div li {
+/* текст ошибок */
+    color: #9b1c1c;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    padding-left: 24px;
+    position: relative;
+}
+
+/* Красивая иконка перед каждой ошибкой */
+.errors_div li::before {
+    content: "-";
+    color: #e02424;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: 8px;
+    top: -2px;
+}
+
+.errors_div h3{
+    text-align: center;
+    color: #9b1c1c;
+}
+
+#closeBTN{
+    color: #9b1c1c;
+}
+
+textarea{
+    border: solid black;
+    border-width: 2px;
+}
+
+.mes{
+    border: solid black;
+    border-width: 2px;
+    width: 20%;
+}
